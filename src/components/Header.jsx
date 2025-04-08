@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react';
 import { Link as ScrollLink } from 'react-scroll';
 import { FiMenu, FiX, FiShoppingCart, FiInstagram, FiFacebook, FiMapPin } from 'react-icons/fi';
+import logo from '../assets/logo.jpg';
 
 const Links = [
     { name: 'Inicio', to: 'home' },
@@ -40,7 +41,7 @@ const Header = () => {
 
                     <Flex alignItems="center">
                         <Image
-                            src="/src/assets/logo.jpg" // Asegúrate de tener un logo
+                            src={logo} // Asegúrate de tener un logo
                             alt="La Tienda de Perla Logo"
                             h="50px"
                             mr={4}

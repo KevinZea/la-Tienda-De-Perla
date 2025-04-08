@@ -12,6 +12,7 @@ import {
 import { FiArrowRight, FiClock } from 'react-icons/fi';
 import { Link as ScrollLink } from 'react-scroll';
 import { useEffect, useRef } from 'react';
+import video from '../assets/mascota-video.mp4';
 
 const Hero = () => {
     const videoRef = useRef(null);
@@ -163,7 +164,7 @@ const Hero = () => {
                                     objectFit: 'cover',
                                 }}
                             >
-                                <source src="/src/assets/mascota-video.mp4" type="video/mp4" />
+                                <source src={video} type="video/mp4" />
                                 Tu navegador no soporta videos HTML5.
                             </video>
                         </Box>
