@@ -40,7 +40,7 @@ const Header = () => {
 
                     <Flex alignItems="center">
                         <Image
-                            src="/src/assets/logo.png" // Asegúrate de tener un logo
+                            src="/src/assets/logo.jpg" // Asegúrate de tener un logo
                             alt="La Tienda de Perla Logo"
                             h="50px"
                             mr={4}
