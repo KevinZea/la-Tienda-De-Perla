@@ -15,6 +15,12 @@ import {
 } from '@chakra-ui/react';
 import { FiStar, FiShoppingCart, FiClock } from 'react-icons/fi';
 
+import chunky8kg from '../assets/products/chunky8kg.jpg';
+import chunky1kg from '../assets/products/chunky1kg.jpg';
+import donkat from '../assets/products/donkat.jpg';
+import chunkypequeño from '../assets/products/chunkypequeño.jpg';
+import ohmaigat from '../assets/products/oh-mai-gat.jpg';
+
 const DiscountCard = ({ product }) => {
     const discountPercentage = Math.round(
         ((product.oldPrice - product.price) / product.oldPrice) * 100
@@ -64,7 +70,7 @@ const DiscountCard = ({ product }) => {
                 </Heading>
 
                 <HStack spacing={1}>
-                    {Array(5)
+                    {Array(product.rating)  
                         .fill('')
                         .map((_, i) => (
                             <Icon
@@ -76,7 +82,7 @@ const DiscountCard = ({ product }) => {
                         ))}
                 </HStack>
 
-                <Text color="gray.600" noOfLines={2} fontSize="sm">
+                <Text color="gray.600"  fontSize="sm">
                     {product.description}
                 </Text>
 
@@ -112,31 +118,50 @@ const DiscountProducts = () => {
     const discountProducts = [
         {
             id: 1,
-            name: 'Collar Ajustable Premium',
-            description: 'Collar ajustable de alta calidad con materiales duraderos y cómodos',
-            price: 35000,
-            oldPrice: 50000,
-            image: 'https://placehold.co/300x300?text=Pet+Collar',
-            rating: 4,
+            name: 'Chunky Gatos Adultos 8 Kg',
+            description: 'Concentrado para gatos adultos de 8 kg, ideal para mantener la salud y el bienestar de tu gato, con sabores de Salmón y Cordero.',
+            price: 99000,
+            oldPrice: 110000,
+            image: chunky8kg,
+            rating: 5,
         },
         {
             id: 2,
-            name: 'Juego de Platos Elevados',
-            description: 'Platos elevados ergonómicos que favorecen una mejor digestión de tu mascota',
-            price: 55000,
-            oldPrice: 85000,
-            image: 'https://placehold.co/300x300?text=Pet+Bowl',
+            name: 'Chunky Gatos 1.5 kg',
+            description: 'Concentrado para gatos adultos de 1.5 kg, ideal para mantener la salud y el bienestar de tu gato, con sabores de Salmón y Cordero.',
+            price: 22000,
+            oldPrice: 25000,
+            image: chunky1kg,
             rating: 5,
         },
         {
             id: 3,
-            name: 'Transportadora Deluxe',
-            description: 'Transportadora de alta gama para viajes seguros y cómodos con tu mascota',
-            price: 95000,
-            oldPrice: 140000,
-            image: 'https://placehold.co/300x300?text=Pet+Carrier',
-            rating: 4,
+            name: 'Don Kat 7kg',
+            description: 'Purina de calidad para gatos adultos de 7kg, ideal para mantener la salud y el bienestar de tu gato.',
+            price: 68000,
+            oldPrice: 75000,
+            image: donkat,
+            rating: 5,
         },
+        {
+            id: 4,
+            name: 'Chunky razas pequeñas 8kg',
+            description: 'Concentrado para perros pequeños, ideal para mantener la salud y el bienestar de tu mascota.',
+            price: 64800,
+            oldPrice: 72000,
+            image: chunkypequeño,
+            rating: 5,
+        },
+        {
+            id: 5,
+            name: 'Oh Mai Gat Caseros 8kg',
+            description: 'Concentrado para gatos adultos de 8kg, ideal para mantener la salud y el bienestar de tu gato.',
+            price: 110000,
+            oldPrice: 123000,
+            image: ohmaigat,
+            rating: 5,
+        },
+        
     ];
 
     return (

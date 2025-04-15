@@ -12,6 +12,11 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { FiChevronLeft, FiChevronRight, FiMaximize } from 'react-icons/fi';
+import local from '../assets/local.jpeg';
+import productos from '../assets/productos-excibidos.jpeg';
+import juguetes from '../assets/juguetes.jpeg';
+import aseo from '../assets/productos-aseo.jpeg';
+import comedores from '../assets/comedores.jpeg';
 
 const Gallery = () => {
     const [currentImage, setCurrentImage] = useState(null);
@@ -19,39 +24,33 @@ const Gallery = () => {
     const galleryImages = [
         {
             id: 1,
-            src: 'https://placehold.co/600x400?text=Tienda+Interior',
+            src: local,
             alt: 'Interior de la Tienda de Perla',
             caption: 'Nuestro acogedor local',
         },
         {
             id: 2,
-            src: 'https://placehold.co/600x400?text=Productos+Exhibidos',
+            src: productos,
             alt: 'Exhibición de productos',
             caption: 'Gran variedad de productos',
         },
         {
             id: 3,
-            src: 'https://placehold.co/600x400?text=Clientes+Felices',
-            alt: 'Clientes felices con sus mascotas',
-            caption: 'Clientes satisfechos',
+            src: juguetes,
+            alt: 'Juguetes para mascotas',
+            caption: 'Juguetes de alta calidad',
         },
         {
             id: 4,
-            src: 'https://placehold.co/600x400?text=Mascotas+Jugando',
-            alt: 'Mascotas jugando en la tienda',
-            caption: 'Área de juegos para mascotas',
+            src: aseo,
+            alt: 'Productos de aseo para mascotas',
+            caption: 'Productos de aseo para mascotas',
         },
         {
             id: 5,
-            src: 'https://placehold.co/600x400?text=Accesorios+Premium',
+            src: comedores,
             alt: 'Accesorios premium para mascotas',
             caption: 'Accesorios de alta calidad',
-        },
-        {
-            id: 6,
-            src: 'https://placehold.co/600x400?text=Eventos+Especiales',
-            alt: 'Eventos especiales en la tienda',
-            caption: 'Eventos para mascotas y dueños',
         },
     ];
 

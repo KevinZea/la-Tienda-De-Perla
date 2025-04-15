@@ -27,6 +27,7 @@ import {
     FiClock,
     FiSend
 } from 'react-icons/fi';
+import logo from '../assets/logo.jpg';
 
 const SocialButton = ({ children, label, href }) => {
     return (
@@ -67,11 +68,12 @@ const Footer = () => {
                     <Stack spacing={6}>
                         <Flex alignItems="center">
                             <Image
-                                src="/src/assets/logo.png"
+                                src={logo}
                                 alt="La Tienda de Perla Logo"
                                 boxSize="50px"
                                 mr={3}
                                 fallbackSrc="https://via.placeholder.com/50x50?text=Logo"
+                                borderRadius={'full'}
                             />
                             <Text fontSize="2xl" fontWeight="bold" color="brand.primary">
                                 La Tienda de Perla

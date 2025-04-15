@@ -10,6 +10,7 @@ import Gallery from './components/Gallery';
 import Location from './components/Location';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsappButton';
+import MarcasCarousel from './components/MarcasCarousel';
 
 // Importando la biblioteca AOS para animaciones
 import AOS from 'aos';
@@ -34,6 +35,7 @@ function App() {
       <FeaturedProducts />
       <DiscountProducts />
       <Gallery />
+      <MarcasCarousel />
       <Location />
       <Footer />
       <WhatsAppButton />

@@ -13,6 +13,13 @@ import {
     useColorModeValue,
 } from '@chakra-ui/react';
 import { FiStar, FiShoppingCart } from 'react-icons/fi';
+import arena4 from '../assets/products/arena-de-calabaza4.jpg';
+import arena10 from '../assets/products/arena-de-calabaza10.jpg';
+import brgato from '../assets/products/BR-GATO.jpg';
+import ringoadulto from '../assets/products/ringo-adulto.webp';
+import ringocachorro from '../assets/products/ringo-cachorro.jpg';
+import felixcomidahumeda from '../assets/products/felix-comida-humeda.jpg';
+import felixadulto from '../assets/products/felix-adulto.jpg';
 
 const ProductCard = ({ product }) => {
     return (
@@ -59,7 +66,7 @@ const ProductCard = ({ product }) => {
                 </Heading>
 
                 <HStack spacing={1}>
-                    {Array(5)
+                    {Array(product.rating)
                         .fill('')
                         .map((_, i) => (
                             <Icon
@@ -71,7 +78,7 @@ const ProductCard = ({ product }) => {
                         ))}
                 </HStack>
 
-                <Text color="gray.600" noOfLines={2} fontSize="sm">
+                <Text color="gray.600" fontSize="sm">
                     {product.description}
                 </Text>
 
@@ -105,38 +112,86 @@ const FeaturedProducts = () => {
     const featuredProducts = [
         {
             id: 1,
-            name: 'Premium Dog Food',
-            description: 'Comida premium para perros con ingredientes naturales y alto valor nutricional',
-            price: 65000,
-            image: 'https://placehold.co/300x300?text=Dog+Food',
+            name: 'ARENA CALABAZA 4.5 kg',
+            description: 'Arena de calabaza de alta calidad para tus mascotas',
+            price: 15000,
+            image: arena4,
+            rating: 5,
+            isNew: false,
+        },
+        {
+            id: 2,
+            name: 'ARENA CALABAZA 10 kg',
+            description: 'Arena de calabaza de alta calidad para tus mascotas',
+            price: 30000,
+            image: arena10,
             rating: 5,
             isNew: true,
         },
         {
-            id: 2,
-            name: 'Cama Ortopédica',
-            description: 'Cama ortopédica para mascotas con espuma de memoria y forro lavable',
-            price: 120000,
-            image: 'https://placehold.co/300x300?text=Pet+Bed',
-            rating: 4,
-        },
-        {
             id: 3,
-            name: 'Juguete Interactivo',
-            description: 'Juguete interactivo que estimula la mente de tu mascota y libera estrés',
-            price: 45000,
-            image: 'https://placehold.co/300x300?text=Interactive+Toy',
+            name: 'BR gato castrado 1 kg',
+            description: 'Br gato castrado de alta calidad para tus mascotas',
+            price: 27000,
+            image: brgato,
             rating: 5,
             isNew: true,
         },
         {
             id: 4,
-            name: 'Kit de Aseo',
-            description: 'Kit completo de aseo para mantener a tu mascota limpia y saludable',
-            price: 78000,
-            image: 'https://placehold.co/300x300?text=Grooming+Kit',
-            rating: 4,
+            name: 'BR gato adulto 1 kg',
+            description: 'Br gato adulto de alta calidad para tus mascotas',
+            price: 29000,
+            image: brgato,
+            rating: 5,
+            isNew: true,
         },
+        {
+            id: 5,
+            name: 'Ringo adulto 1 kg',
+            description: 'Ringo adulto de alta calidad para tus mascotas',
+            price: 6500,
+            image: ringoadulto,
+            rating: 5,
+            isNew: true,
+        },
+        {
+            id: 6,
+            name: 'Ringo cachorro 1 kg',
+            description: 'Ringo cachorro de alta calidad para tus mascotas',
+            price: 7500,
+            image: ringocachorro,
+            rating: 5,
+            isNew: true,
+        },
+        {
+            id: 7,
+            name: 'Ringo Premium 1 kg',
+            description: 'Ringo Premium de alta calidad para tus mascotas',
+            price: 7000,
+            image: ringoadulto,
+            rating: 5,
+            isNew: true,
+        },
+        {
+            id: 8,
+            name: 'Felix comida humeda',
+            description: 'Felix comida humeda para tus mascotas sabor carne, pavo, pescado blanco, atun salmon',
+            price: 3200,
+            image: felixcomidahumeda,
+            rating: 5,
+            isNew: true,
+        },
+        {
+            id: 9,
+            name: 'Felix Adulto 200 gr',
+            description: 'Felix para mascotas adultas',
+            price: 3600,
+            image: felixadulto,
+            rating: 5,
+            isNew: true,
+        },
+        
     ];
 
     return (
