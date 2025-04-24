@@ -78,7 +78,7 @@ const ProductCard = ({ product }) => {
                         ))}
                 </HStack>
 
-                <Text color="gray.600" fontSize="sm">
+                <Text color="gray.600" fontSize="sm" whiteSpace={"pre-wrap"}>
                     {product.description}
                 </Text>
 
@@ -113,7 +113,7 @@ const FeaturedProducts = () => {
         {
             id: 1,
             name: 'ARENA CALABAZA 4.5 kg',
-            description: 'Arena de calabaza de alta calidad para tus mascotas',
+            description: `Arena de calabaza de alta calidad para tus mascotas`,
             price: 15000,
             image: arena4,
             rating: 5,
@@ -149,7 +149,13 @@ const FeaturedProducts = () => {
         {
             id: 5,
             name: 'Ringo adulto 1 kg',
-            description: 'Ringo adulto de alta calidad para tus mascotas',
+            description: `Ringo adulto de alta calidad para tus mascotas
+Precios:
+1 kg: 6.500 
+2 kg :13.000
+20 kg:109.000
+30 kg :158.000
+            `,
             price: 6500,
             image: ringoadulto,
             rating: 5,
@@ -158,7 +164,13 @@ const FeaturedProducts = () => {
         {
             id: 6,
             name: 'Ringo cachorro 1 kg',
-            description: 'Ringo cachorro de alta calidad para tus mascotas',
+            description: `Ringo cachorro de alta calidad para tus mascotas
+Precios:
+1 kg 7.500
+2 kg 15.000
+15 kg 86.000
+30 kg 163.000
+            `,
             price: 7500,
             image: ringocachorro,
             rating: 5,
@@ -167,7 +179,13 @@ const FeaturedProducts = () => {
         {
             id: 7,
             name: 'Ringo Premium 1 kg',
-            description: 'Ringo Premium de alta calidad para tus mascotas',
+            description: `Ringo Premium de alta calidad para tus mascotas
+Precios:
+1 kg 7.000
+2 kg 14.000
+20 kg 120.000
+30 kg 175.000
+            `,
             price: 7000,
             image: ringoadulto,
             rating: 5,
@@ -185,13 +203,19 @@ const FeaturedProducts = () => {
         {
             id: 9,
             name: 'Felix Adulto 200 gr',
-            description: 'Felix para mascotas adultas',
+            description: `Felix para mascotas adultas
+Precios:
+200 gr 3.600
+1.5 kg 30.000
+10 kg  147.000
+
+            `,
             price: 3600,
             image: felixadulto,
             rating: 5,
             isNew: true,
         },
-        
+
     ];
 
     return (
