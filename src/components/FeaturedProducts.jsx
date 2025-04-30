@@ -20,6 +20,17 @@ import ringoadulto from '../assets/products/ringo-adulto.webp';
 import ringocachorro from '../assets/products/ringo-cachorro.jpg';
 import felixcomidahumeda from '../assets/products/felix-comida-humeda.jpg';
 import felixadulto from '../assets/products/felix-adulto.jpg';
+import arenamaiz from '../assets/products/arena-de-maiz.jpg';
+import unikatarena from '../assets/products/unikat-arena.jpg';
+import pecesfindesemana from '../assets/products/peces-fin-de-semana.jpg';
+import incros from '../assets/products/incros.jpg';
+import ocelatus from '../assets/products/ocelatus.jpg';
+import spanky from '../assets/products/spanky.jpg';
+import whiskas from '../assets/products/whiskas.jpg';
+import chunky from '../assets/products/chunky.jpg';
+import wowcat from '../assets/products/wow-cat.jpg';
+import alpiste from '../assets/products/alpiste.jpg';
+import mixtura from '../assets/products/mixtura.jpg';
 
 const ProductCard = ({ product }) => {
     return (
@@ -212,6 +223,117 @@ Precios:
             `,
             price: 3600,
             image: felixadulto,
+            rating: 5,
+            isNew: true,
+        },
+        //news
+        {
+            id: 10,
+            name: 'Arena de maiz 4 kg',
+            description: `Arena sanitaria de maíz para gatos, ecológica, biodegradable, composble, se puede deshacer por el sanitario,
+Exelente absorción y compactación, Rinde hasta el doble de la arena convencional, Muy buen control de olores, Hipoalergénica,
+su textura cuida las patitas de los gatos, No es tóxica.`,
+            price: 24000,
+            image: arenamaiz,
+            rating: 5,
+            isNew: true,
+        },
+        {
+            id: 11,
+            name: 'Arena unikat',
+            description: `900 g: 5.000 
+4 kg : 18.000 
+18 kg: 74.000 `,
+            price: 18000,
+            image: unikatarena,
+            rating: 5,
+            isNew: true,
+        },
+        {
+            id: 12,
+            name: 'peces fin de semana',
+            description: `Suplemento alimenticio para toda clase de peces ornamentales.`,
+            price: 9700,
+            image: pecesfindesemana,
+            rating: 5,
+            isNew: true,
+        },
+        {
+            id: 13,
+            name: 'incros 14 gramos',
+            description: `Esta comida para peces es un alimento completo, balanceado, alto en proteína, carbohidratos, aminoácidos, vitaminas y minerales.`,
+            price: 4000,
+            image: incros,
+            rating: 5,
+            isNew: true,
+        },
+        {
+            id: 14,
+            name: 'ocelatus 20 gr',
+            description: `Es ideal para peces ornamentales tropicales y de agua fría en todas sus etapas de desarrollo.
+ocelatus 100 gr 13.600
+            `,
+            price: 3000,
+            image: ocelatus,
+            rating: 5,
+            isNew: true,
+        },
+        {
+            id: 15,
+            name: 'MR. spanky 4 kg',
+            description: `Con 30% más de fragancia y una fórmula aglomerante 
+1 kg:4.300 
+4 kg: 15.700 
+9 kg: 34.000 
+15 kg: 55.700 
+25 kg:82.000`,
+            price: 15700,
+            image: spanky,
+            rating: 5,
+            isNew: true,
+        },
+        {
+            id: 16,
+            name: 'Whiskas',
+            description: `Whiskas alimento húmedo para gato`,
+            price: 3500,
+            image: whiskas,
+            rating: 5,
+            isNew: true,
+        },
+        {
+            id: 17,
+            name: ' Chunky gatos',
+            description: `Comida Húmeda Chunky Pouch Delicat por 80 gr`,
+            price: 3500,
+            image: chunky,
+            rating: 5,
+            isNew: true,
+        },
+        {
+            id: 18,
+            name: 'Wow cat',
+            description: `Comida WOW CAN Gato sabor a Salmón, Pollo y Ternera por 100 g Vapor.`,
+            price: 4000,
+            image: wowcat,
+            rating: 5,
+            isNew: true,
+        },
+        {
+            id: 19,
+            name: 'Alpiste',
+            description: `460 gr`,
+            price: 3400,
+            image: alpiste,
+            rating: 5,
+            isNew: true,
+        },
+        {
+            id: 20,
+            name: 'Mixtura',
+            description: '460 gr',
+            price: 2900,
+            image: mixtura,
             rating: 5,
             isNew: true,
         },
